@@ -1,0 +1,29 @@
+{
+  "name": "hapinesschart-client",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Damian Szymczuk <kontakt@dszymczuk.pl>",
+  "dependencies": {
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.2.0"
+  },
+  "devDependencies": {
+    "chalk": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
+  },
+  "proxy": "http://localhost:3001",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev-watch": "cd tools && gulp dev-tools-watch"
+  }
+}
