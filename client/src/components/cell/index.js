@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-const Cell = ({empty, children}) => {
+const Cell = ({empty, children, hapinessLevel}) => {
+
 		return (
-			<div className="cell">
+			<div className={`cell level-${hapinessLevel}`}>
 				{empty &&
 				<span>&nbsp;</span>
 				}
@@ -19,7 +20,8 @@ Cell.defaultProps = {};
 
 Cell.propTypes = {
 	empty: PropTypes.bool,
-	children: PropTypes.node
+	children: PropTypes.node,
+	hapinessLevel: PropTypes.string,
 };
 
 export default Cell;

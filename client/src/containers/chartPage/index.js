@@ -19,7 +19,7 @@ const users = Array.apply(null, {length: 10}).map((item, index) => {
 	}
 });
 
-const hapiness = Array.apply(null, {length: 10}).map((item, index) => {
+const hapiness = Array.apply(null, {length: 2}).map((item, index) => {
 	return {
 		key: index
 	}
@@ -49,7 +49,31 @@ class MainPage extends Component {
 									<CellDate/>
 								</Cell>
 								{hapiness.map(item => {
-									return (<Cell key={item.key}>
+									return (<Cell key={item.key} hapinessLevel="1">
+										<CellHapiness/>
+									</Cell>)
+								})}
+
+								{hapiness.map(item => {
+									return (<Cell key={item.key} hapinessLevel="2">
+										<CellHapiness/>
+									</Cell>)
+								})}
+
+								{hapiness.map(item => {
+									return (<Cell key={item.key} hapinessLevel="3">
+										<CellHapiness/>
+									</Cell>)
+								})}
+
+								{hapiness.map(item => {
+									return (<Cell key={item.key} hapinessLevel="4">
+										<CellHapiness/>
+									</Cell>)
+								})}
+
+								{hapiness.map(item => {
+									return (<Cell key={item.key} hapinessLevel="5">
 										<CellHapiness/>
 									</Cell>)
 								})}

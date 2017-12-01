@@ -7,3 +7,14 @@ $paddingSize: 20px;
   padding: $paddingSize;
   border-bottom: $borderStyle;
 }
+
+$menu_color_list: #F34A53 #FAE3B4 #AAC789 #437356 #1E4147;
+//$menu_color_list: #FF6138  #FFFF9D  #BEEB9F  #79BD8F  #00A388;
+
+@each $current-color in $menu_color_list {
+  $i: index($menu_color_list, $current-color);
+
+  .level-#{$i} {
+    background-color: $current-color;
+  }
+}
