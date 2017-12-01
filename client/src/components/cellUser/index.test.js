@@ -3,11 +3,6 @@ import { shallow } from 'enzyme';
 import CellUser from "./";
 
 describe('renders', () => {
-	it('cellUser component', () => {
-		const cellUser = shallow(<CellUser/>);
-		expect(cellUser.length).toEqual(1);
-	});
-
 	it('cellUser component with default name', () => {
 		const cellUser = shallow(<CellUser/>);
 		expect(cellUser.length).toEqual(1);
