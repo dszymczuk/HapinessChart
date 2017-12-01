@@ -35,7 +35,7 @@ class MainPage extends Component {
 					<Row>
 						<Cell empty />
 						{users.map(item => {
-							return (<Cell key={item.key}>
+							return (<Cell key={item.key} customClasses="center">
 								<CellUser/>
 							</Cell>)
 						})}
@@ -50,31 +50,31 @@ class MainPage extends Component {
 								</Cell>
 								{hapiness.map(item => {
 									return (<Cell key={item.key} hapinessLevel="1">
-										<CellHapiness/>
+										<CellHapiness emoji='weary'/>
 									</Cell>)
 								})}
 
 								{hapiness.map(item => {
 									return (<Cell key={item.key} hapinessLevel="2">
-										<CellHapiness/>
+										<CellHapiness emoji='unamused'/>
 									</Cell>)
 								})}
 
 								{hapiness.map(item => {
 									return (<Cell key={item.key} hapinessLevel="3">
-										<CellHapiness/>
+										<CellHapiness emoji='neutral_face'/>
 									</Cell>)
 								})}
 
 								{hapiness.map(item => {
 									return (<Cell key={item.key} hapinessLevel="4">
-										<CellHapiness/>
+										<CellHapiness emoji='relaxed'/>
 									</Cell>)
 								})}
 
 								{hapiness.map(item => {
 									return (<Cell key={item.key} hapinessLevel="5">
-										<CellHapiness/>
+										<CellHapiness emoji='grinning'/>
 									</Cell>)
 								})}
 							</Row>
