@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import './reset.css';
 
 import store from './createStore';
 import AppWrapper from "./components/appWrapper";
