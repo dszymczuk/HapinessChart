@@ -4,8 +4,9 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import { main } from "../../constants/routes";
+import { main,user } from "../../constants/routes";
 import MainPage from "../../containers/mainPage";
+import UserPage from "../../containers/userPage";
 
 
 const AppWrapper = () => {
@@ -13,6 +14,7 @@ const AppWrapper = () => {
     <Router>
         <Switch>
           <Route exact path={main} component={MainPage}/>
+          <Route exact path={user} component={UserPage}/>
         </Switch>
     </Router>
   );
