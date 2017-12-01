@@ -1,0 +1,6 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: 1px solid #f5f5f5;
+}

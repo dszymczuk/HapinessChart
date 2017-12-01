@@ -1,3 +1,19 @@
-.mainPage {
-  background-color: green;
+.chartPage {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chartPage .days {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.chartPage .users {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }

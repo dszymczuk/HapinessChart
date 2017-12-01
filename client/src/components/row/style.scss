@@ -1,0 +1,8 @@
+@import "../../variables";
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-right: $borderStyle;
+}
