@@ -36,7 +36,7 @@ class MainPage extends Component {
 						<Cell empty />
 						{users.map(item => {
 							return (<Cell key={item.key} customClasses="center">
-								<CellUser/>
+								<CellUser name="Damian"/>
 							</Cell>)
 						})}
 					</Row>
