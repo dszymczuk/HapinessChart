@@ -1,20 +1,28 @@
-import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import React  from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 
-class CellHapiness extends Component {
-  render() {
+import { Emoji } from 'emoji-mart'
+
+
+const CellHapiness = (props)=> {
     return (
       <div className="cellHapiness">
-        Hapiness
+				<Emoji {...props} />
       </div>
     );
-  }
-}
-;
+};
 
-CellHapiness.defaultProps = {};
+CellHapiness.defaultProps = {
+  emoji: '',
+	set: 'messenger',
+  size: 40
+};
 
-CellHapiness.propTypes = {};
+CellHapiness.propTypes = {
+	emoji: PropTypes.string,
+	set: PropTypes.string,
+	size: PropTypes.number,
+};
 
 export default CellHapiness;
