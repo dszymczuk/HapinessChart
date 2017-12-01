@@ -1,12 +1,20 @@
 @import "../../variables";
 
-$paddingSize: 20px;
+$paddingSize: 10px;
 
 .cell {
+  height: $cellSize - (2 * $paddingSize);
   color: $colorFont;
   padding: $paddingSize;
   border-bottom: $borderStyle;
+  &.center {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
 }
+
+
 
 $menu_color_list: #F34A53 #FAE3B4 #AAC789 #437356 #1E4147;
 //$menu_color_list: #FF6138  #FFFF9D  #BEEB9F  #79BD8F  #00A388;
