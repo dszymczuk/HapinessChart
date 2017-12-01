@@ -7,8 +7,7 @@ cache:
     - "node_modules"
 env:
   - CLIENT_DIR=client
-  - SERVER_DIR=server
 before_script:
   - cd $CLIENT_DIR && yarn install
 script:
-  - cd $CLIENT_DIR && yarn test
+  - yarn test
