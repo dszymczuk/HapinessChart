@@ -1,21 +1,19 @@
 .chartPage {
-  background-color: green;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .chartPage .days {
-  background-color: blue;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
-.chartPage .emotion {
-  background-color: red;
+.chartPage .users {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
