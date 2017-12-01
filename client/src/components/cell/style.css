@@ -1,7 +1,14 @@
 .cell {
+  height: 44px;
   color: #f5f5f5;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 1px solid #f5f5f5;
+}
+
+.cell.center {
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .level-1 {
