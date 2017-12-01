@@ -1,8 +1,23 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ComponentName from "./";
+import CellUser from "./";
 
-it('renders welcome message', () => {
-  // const wrapper = shallow(<ComponentName />);
-  // expect(wrapper.length).toEqual(1);
-});
+describe('renders', () => {
+	it('cellUser component', () => {
+		const cellUser = shallow(<CellUser/>);
+		expect(cellUser.length).toEqual(1);
+	});
+
+	it('cellUser component with default name', () => {
+		const cellUser = shallow(<CellUser/>);
+		expect(cellUser.length).toEqual(1);
+		expect(cellUser.props().children).toEqual('');
+	});
+
+	it('cellUser component with name passed in props', () => {
+		const userName = 'test';
+		const cellUser = shallow(<CellUser name={userName}/>);
+		expect(cellUser.props().children).toEqual(userName);
+	});
+})
+

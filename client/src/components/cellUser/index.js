@@ -1,20 +1,21 @@
-import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 
-class CellUser extends Component {
-  render() {
-    return (
-      <div className="cellUser">
-        User name
-      </div>
-    );
-  }
-}
-;
+const CellUser = ({name}) => {
+	return (
+		<div className="cellUser">
+			{name}
+		</div>
+	);
+};
 
-CellUser.defaultProps = {};
+CellUser.defaultProps = {
+	name: ''
+};
 
-CellUser.propTypes = {};
+CellUser.propTypes = {
+	name: PropTypes.string
+};
 
 export default CellUser;
