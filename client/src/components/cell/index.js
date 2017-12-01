@@ -1,19 +1,25 @@
-import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './style.css';
 
-const Cell = ({children})=> {
-
+const Cell = ({empty, children}) => {
 		return (
-      <div className="cell">
-        {children}
-      </div>
+			<div className="cell">
+				{empty &&
+				<span>&nbsp;</span>
+				}
+
+				{!empty && children}
+			</div>
 		);
 	}
 ;
 
 Cell.defaultProps = {};
 
-Cell.propTypes = {};
+Cell.propTypes = {
+	empty: PropTypes.bool,
+	children: PropTypes.node
+};
 
 export default Cell;

@@ -1,3 +1,9 @@
+@import "../../variables";
+
+$paddingSize: 20px;
+
 .cell {
-  padding: 10px 0;
+  color: $colorFont;
+  padding: $paddingSize;
+  border-bottom: $borderStyle;
 }
