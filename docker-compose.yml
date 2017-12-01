@@ -1,0 +1,23 @@
+version: '2'
+volumes:
+  mongodbdb_data:
+  redis_data:
+services:
+    mongodb:
+        image: mongo:3.4.2
+        volumes:
+        - mongodbdb_data:/data/db
+        ports:
+        - 27017:27017
+    mongoclient:
+        image: mongoclient/mongoclient
+        links:
+        - mongodb
+        depends_on:
+        - mongodb
+        volumes:
+        - ./mongoclient:/data/db
+        ports:
+        - "3300:3000"
+        environment:
+        - MONGO_URL=mongodb://mongodb:27017/meteor
