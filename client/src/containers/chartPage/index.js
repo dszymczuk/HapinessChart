@@ -6,24 +6,15 @@ import CellDate from "../../components/cellDate";
 import CellHapiness from "../../components/cellHapiness";
 import CellUser from "../../components/cellUser";
 
-
-const row = Array.apply(null, {length: 10}).map((item, index) => {
+const generateKeyArray = (length) => Array.apply(null, {length}).map((item, index) => {
 	return {
 		key: index
 	}
 });
 
-const users = Array.apply(null, {length: 10}).map((item, index) => {
-	return {
-		key: index
-	}
-});
-
-const hapiness = Array.apply(null, {length: 2}).map((item, index) => {
-	return {
-		key: index
-	}
-});
+const row = generateKeyArray(10);
+const users = generateKeyArray(10);
+const hapiness = generateKeyArray(2);
 
 
 class MainPage extends Component {
