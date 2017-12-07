@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import dateFormat from './../../constants/dateFormat';
 import './style.css';
 
 const CellDate = ({date}) => {
 
-	const formatedDate = moment(date, 'DD-MM-YYYY');
+	const formatedDate = moment(date, dateFormat);
 	const day = formatedDate.format('DD');
 	const month = formatedDate.format('MMMM');
 	const year = formatedDate.format('YYYY');
