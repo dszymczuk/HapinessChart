@@ -24,7 +24,7 @@ class MainPage extends Component {
 			<div className="chartPage">
 				<div className="users">
 					<Row>
-						<Cell empty />
+						<Cell empty customClasses="dayHeight" />
 						{users.map(item => {
 							return (<Cell key={item.key} customClasses="center">
 								<CellUser name="Damian"/>
@@ -36,8 +36,8 @@ class MainPage extends Component {
 					{row.map(item => {
 						return (
 							<Row key={item.key}>
-								<Cell>
-									<CellDate/>
+								<Cell customClasses="dayHeight">
+									<CellDate date="23-11-2017"/>
 								</Cell>
 								{hapiness.map(item => {
 									return (<Cell key={item.key} hapinessLevel="1">

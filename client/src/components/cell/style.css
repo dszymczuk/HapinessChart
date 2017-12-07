@@ -11,6 +11,10 @@
   align-content: center;
 }
 
+.cell.dayHeight {
+  height: 60px;
+}
+
 .level-1 {
   background-color: #F34A53;
 }
