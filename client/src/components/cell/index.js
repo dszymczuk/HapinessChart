@@ -4,7 +4,7 @@ import './style.css';
 
 const Cell = ({empty, children, hapinessLevel, customClasses}) => {
 
-	const happyLevel = hapinessLevel ? `level-${hapinessLevel}` : '';
+		const happyLevel = hapinessLevel ? `level-${hapinessLevel}` : '';
 
 		return (
 			<div className={`cell ${happyLevel} ${customClasses}`}>
@@ -23,7 +23,10 @@ Cell.defaultProps = {};
 Cell.propTypes = {
 	empty: PropTypes.bool,
 	children: PropTypes.node,
-	hapinessLevel: PropTypes.string,
+	hapinessLevel: PropTypes.oneOfType([
+		PropTypes.number,
+		PropTypes.string
+	]),
 	customClasses: PropTypes.string,
 };
 
