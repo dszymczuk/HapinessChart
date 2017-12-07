@@ -1,3 +1,19 @@
 .cellDate {
-  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.cellDate .day {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.cellDate .month {
+  font-size: 16px;
+}
+
+.cellDate .year {
+  font-size: 10px;
 }
