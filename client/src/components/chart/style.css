@@ -1,0 +1,19 @@
+.chart {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chart .days {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.chart .users {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
