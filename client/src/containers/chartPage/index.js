@@ -45,7 +45,8 @@ class MainPage extends Component {
 								{users && users.map((user, index) => {
 									const userObj = hapiness.find(u => get([0])(keys(u)) === user);
 									const [happyData] = values(userObj).map(i => i);
-									const {emoji, level} = happyData;
+									const emoji = get('emoji')(happyData);
+									const level = get('level')(happyData);
 									const key = `${index}-${user}-${level}`;
 									return (<Cell key={key} hapinessLevel={level}>
 										<CellHapiness emoji={emoji}/>
