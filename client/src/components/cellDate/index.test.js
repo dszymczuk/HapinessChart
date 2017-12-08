@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
+import dateFormat from './../../constants/dateFormat';
 import CellDate from "./";
 
 it('renders CellDate', () => {
@@ -8,7 +9,7 @@ it('renders CellDate', () => {
 
 	const cellDate = shallow(<CellDate date={date}/>);
 
-	const formatedDate = moment(date, 'DD-MM-YYYY');
+	const formatedDate = moment(date, dateFormat);
 	const momentDay = formatedDate.format('DD');
 	const momentMonth = formatedDate.format('MMMM');
 	const momentYear = formatedDate.format('YYYY');

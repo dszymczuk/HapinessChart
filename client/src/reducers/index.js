@@ -1,2 +1,6 @@
 import { combineReducers } from 'redux-loop';
-export default combineReducers({});
+import hapiness from './hapiness';
+
+export default combineReducers({
+	hapiness
+});
